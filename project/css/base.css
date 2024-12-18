@@ -1,0 +1,26 @@
+/* Base styles and CSS variables */
+:root {
+    --primary-beige: #F5F5DC;
+    --dark-beige: #E8E4C9;
+    --light-beige: #FFFDF3;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-beige);
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}

@@ -1,0 +1,170 @@
+/* Main CSS file */
+@import 'utils/variables.css';
+@import 'utils/reset.css';
+@import 'utils/helpers.css';
+@import 'components/nav.css';
+@import 'components/hero.css';
+@import 'components/cards.css';
+@import 'layouts/grid.css';
+
+/* Global Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn var(--transition-speed) ease;
+}
+
+.slide-up {
+    animation: slideInUp var(--transition-speed) ease;
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+
+.event-card {
+    
+    background-color: #f2e9e4;
+    /* Quartz Rose color */
+    border: 1px solid #e4b5b1;
+    /* Soft contrast border */
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.event-card h2 {
+    color: #2c3e50;
+    /* Darker shade for headings */
+    margin-bottom: 0.5rem;
+}
+
+.event-card .date {
+    color: #7f8c8d;
+    /* Grey color for date text */
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    color: #34495e;
+    /* Darker grey for paragraph text */
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.event-card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    padding: 1rem;
+    border-bottom: 2px solid #e4b5b1;
+    /* Quartz Rose border */
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link.active {
+    color: #fff;
+    background-color: #e4b5b1;
+    /* Quartz Rose active color */
+}
+
+.content {
+    padding: 2rem 1rem;
+}
+
+.events-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* Adds space between cards */
+    justify-content: center;
+}
+
+.event-card {
+    background-color: #f2e9e4;
+    /* Quartz Rose color */
+    border: 1px solid #e4b5b1;
+    padding: 1rem;
+    width: 45%;
+    text-align: left;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.event-card h2 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.event-card .date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-card p {
+    color: #34495e;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.event-card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+    text-align: left;
+    padding: 1rem;
+    color: #000000;
+    border-top: 2px solid #e4b5b1;
+    /* Quartz Rose border at the top */
+}

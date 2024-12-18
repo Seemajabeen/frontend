@@ -1,0 +1,29 @@
+/* Section layout styles */
+.programs,
+.events-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.placement-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-section {
+    background-color: var(--primary-beige);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.about-section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-section h2:first-child {
+    margin-top: 0;
+}

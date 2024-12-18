@@ -1,0 +1,75 @@
+/* Card Components */
+.card {
+    background-color: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-speed) ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.card h2 {
+    color: var(--rose-quartz-dark);
+    margin-bottom: var(--spacing-sm);
+}
+
+.card p {
+    color: var(--text-color);
+}
+
+/* Feature Card */
+.feature-card {
+    text-align: center;
+    background-color: var(--rose-quartz-light);
+}
+
+/* Event Card */
+.event-card .date {
+    color: var(--rose-quartz-dark);
+    font-weight: bold;
+    margin: var(--spacing-sm) 0;
+}
+
+/* Stats Card */
+.stat-card {
+    text-align: center;
+    background-color: var(--rose-quartz-light);
+}
+
+.stat-card h2 {
+    font-size: 2.5rem;
+    color: var(--rose-quartz-dark);
+}
+
+
+/* In your CSS file (css/main.css) */
+
+.r-card {
+    width: 45%;
+    
+    margin: 1rem auto;
+    padding-top: 20px;
+    text-align: center;
+    background-color: #F7CAC9;
+    
+}
+
+@media (min-width: 768px) {
+    .r-card {
+        width: 30%;
+        /* Adjust for larger screens if needed */
+    }
+}
